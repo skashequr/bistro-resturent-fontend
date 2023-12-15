@@ -4,10 +4,10 @@ import { AuthContex } from "../AuthProvider/AuthProvider";
 
 
 const PrivateRoute = ({ children }) => {
-    const { user, loading } = useContext(AuthContex);
+    const { user, lodder} = useContext(AuthContex);
     const location = useLocation();
 
-    if(loading){
+    if(lodder){
         return <progress className="progress w-56"></progress>
     }
 
