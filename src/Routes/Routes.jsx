@@ -10,6 +10,7 @@ import Regester from "../pages/Regester/Regester";
 import Dashbord from "../components/DashBord/Dashbord";
 import Card from "../components/DashBord/Card";
 import AddItems from "../components/DashBord/AddItems";
+import AllUsers from "../components/DashBord/AllUsers/AllUsers";
 
 
   export const router = createBrowserRouter([
@@ -50,6 +51,11 @@ import AddItems from "../components/DashBord/AddItems";
         {
           path: 'add items',
           element: <AddItems></AddItems>
+        },
+        //Admin routs
+        {
+          path: 'users',
+          element: <AllUsers></AllUsers>
         }
       ]
     }
